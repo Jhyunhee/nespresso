@@ -1,0 +1,24 @@
+body{height: 3000px; margin: 0; padding: 0; font-family: 'Lobster', cursive;}
+
+.nav{background-color: rgba(91, 74, 58, 0.62); position: fixed; display: inline-block; width: 95px; height: 980px; margin: 0; padding: 0;}
+.nav li{cursor: pointer; border-top: 1px solid #22160B; width: 95px; height: 98px; line-height: 97px; font-size: 18px; color: #000; list-style: none; box-sizing: border-box;}
+.nav li:first-child{border-top: 0;}
+.nav li .text{margin-left: 22px; text-align: center; width: 140px; height: 97px; background-color: rgba(91, 74, 58, 0.62); z-index: 1; display: none; position: absolute; color: #fff; font-size: 22px; letter-spacing: 2px;}
+.nav li:hover .text{display: inline-block;}
+.nav li img{width: 50px; height: 50px; margin-top: 20px; margin-left: 23px;}
+
+.section{width: 100%; height: 1000px; overflow: hidden;}
+.section:nth-child(2){background-image: url(img/coffee_1.jpg); background-position: center; background-size: cover;}
+.section:nth-child(3){background-image: url(img/coffee_2.jpg); background-position: center; background-size: cover;}
+.section:nth-child(4){background-image: url(img/coffee_3.jpg); background-position: center; background-size: cover;}
+.indicator{position: fixed; right: 20px; top: 50%; transform: translateY(-50%); display: none;}
+.indicator ul li{margin: 10px 0; color: #fff; cursor: pointer;}
+.indicator ul li.active{color: #000;}
+.abc{display: block; animation: ani 1s forwards;}
+@keyframes ani{0%{opacity: 0;} 100%{opacity: 1;}}
+
+.section .mainlogo{position: absolute; right: 20px; top: 20px;}
+.section .mainscroll{position: absolute; bottom: 80px;; left: 48%; animation:slideOutDown 4s infinite;}
+.section .mainscroll img{width: 70px;height: 70px;}
+.section .sns {position: relative; float: right; right: 20px; top: 930px;}
+.section .sns img{width: 50px; height: 50px; margin-right: 15px; cursor: pointer;}
